@@ -155,3 +155,153 @@
 
 //   );
 // }
+
+
+// import React from "react"
+
+// // import {useState,useEffect} from "react"
+
+// function Secret(){
+//   return <h1>Welcome</h1>
+// }
+
+
+// function Available(){
+//     return <h1>log in please</h1>
+// }
+
+// function Authourise({val,name}){
+//   console.log(name)
+//   return (
+//     <>
+//       {val ? <Secret/> : <Available/>}
+//     </> 
+//   );
+// }
+
+// export default Authourise;
+
+// import React from "react"
+// import { useLocation } from "react-router";
+
+// function Error(){
+//     let location=useLocation();
+//     // console.log(location);
+//     return(
+//         <h1>{location.pathname} Page does not exist </h1>
+//     )
+// }
+// export default Error;
+
+// import React from "react"
+
+// function Footer(props){
+//   return(
+//     <h3>{props.type}</h3>
+//     // we got the date here
+//   );
+// }
+// export default Footer;
+
+// import React from "react"
+
+// import {useState} from "react"
+
+// function handleSubmit(e){
+//     e.preventDefault();
+//     alert("hii");
+// }
+  
+  
+// function Input(props){
+//     const [name,setName]=useState("")
+//     const val=props.place;
+//     function handleChange(e){
+//         setName(e.target.value)
+//     }
+//     return (
+//         <form>
+//             <input type="text" value={name} required onChange={handleChange}></input>
+//             <button onClick={handleSubmit}>click ME</button>
+//         </form>
+//     )
+// }
+
+// export default Input; 
+
+
+// import React from "react"
+
+// function Header(props){
+//     return(
+//       <h1>{props.name}</h1>
+//     );
+// }
+// export default Header;
+
+// import React from "react"
+
+// function Main(props){
+//   return(
+//     <main>
+//       <h2>{props.language}</h2>
+//       {/* note if we need to style an element then in jsx we use {{}} */}
+//       {/* without using props its not recommended*/}
+//       {/* <ul style={{textAlign:"left"}}>
+//         {things.map((items,i)=> <li key={i}>{items}</li>)}
+//       </ul> */}
+//       {/* using an object  and using props*/}
+//       {/* Now we will talk about image adding in react */}
+//       <ul>
+//         {props.items.map((items)=>(<li key={items.id}>{items.title}</li>))}
+//       </ul>
+//       <img src="https://github.com/Jittojoyes98.png" alt="not available"/>
+//       {/* if used import then use that name used in the importing time */}
+//     </main>
+
+//   );
+// }
+
+// export default Main;
+
+
+import React from "react"
+
+// import {useState,useEffect} from "react"
+
+// function State(){
+//     const [state,setState]=useState("coding");
+//     const [thing,setThing]=useState("hello");
+//     // console.log(setState);
+//     useEffect(()=>{
+//       console.log(state);
+//     },[state]);
+//     // dependency array works when the dependent value is changed in the browser
+//     // if dependency array is not used then it will work for any change in the browser
+//     // not just change with the given value.
+  
+//     // useEffect is rendered each time we do something on any element on the browser.
+  
+//     // useEffect(()=>{
+//     //   console.log(thing);// actually thing is not changed or its value is permenant
+//     //                     // its always displayed on the console for the first time rendering.
+//     // },[thing])// if thing is not changing then it will be displayed once only.
+//     // if no dependency then it will be consoled each time.
+    
+//     // useEffect(()=>{
+//     //   console.log(thing);
+//     // })
+//     // it only works for the <State/> elements change
+  
+  
+//     return(
+//       <>
+//         <h1>I like {state}</h1>
+//         <button onClick={()=>setState("coffee")}>coffee</button>
+//         <button onClick={()=>setState("chaya")}>chaya</button>
+//         <button onClick={()=>setState("chicken")}>chicken</button>
+//       </>
+//     )
+//   }
+
+//   export default State;

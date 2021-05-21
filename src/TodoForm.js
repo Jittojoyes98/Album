@@ -21,7 +21,7 @@ function Todoform({addTodo}) {
           value={val}
           required
         ></input>
-        <input type="submit" value="Add"></input>
+        <input type="submit" value="Add" className="add"></input>
       </form>
     </div>
   );
