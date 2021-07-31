@@ -1,3 +1,6 @@
+// https://codesandbox.io/s/angry-johnson-c76sf?file=/src/App.js
+// the above mentioned is for react as a class based components
+
 import axios from "axios"
 import React, { useEffect, useState } from "react"
 import {useParams,Link} from "react-router-dom"

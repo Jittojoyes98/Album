@@ -19,21 +19,6 @@ export default function Gallery(){
     //     }
     //     group=[...group,res]
     // }
-    function createarray(i,val){
-        let res=[]
-        let k=(i+4<val ? i+4: val)
-        for(let j=i;j<k ;j++){
-            res.push(<img src={source[j].url}/>)
-        }
-        return res;
-        
-    }
-    function divide(val){
-        let group=[]
-        for(let i=0;i<(val/4);i++){
-            group=[...group,createarray(i,val)];
-        }
-    }
     return(
         <div>
             <div className="gallery-img">

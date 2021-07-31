@@ -7,6 +7,7 @@ import Home from "./Home"
 import Albums from "./Album"
 import Gallery from "./Gallery"
 import Searchbar from "./Searchbar"
+import Counter from "./Counter"
 
 
 
@@ -29,7 +30,8 @@ function App() {
         <Route exact path="/albums/:id/photos">
           <Gallery />
         </Route>
-      </Router>
+      </Router> 
+      {/* <Counter/>   */}
     </div>
     
   );
